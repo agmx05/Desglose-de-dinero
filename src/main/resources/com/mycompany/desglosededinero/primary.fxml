@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" 
+      spacing="20.0" 
+      xmlns="http://javafx.com/javafx/8.0.171" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.mycompany.desglosededinero.PrimaryController">
+    
+   <children>
+       
+      <Label text="Dinero: " />
+      <TextField fx:id="txtdinero" text="" />
+      
+      <Button fx:id="btnEquis" 
+              text="X" 
+              onAction="#btnEquis_click"/>
+      
+      <Button fx:id="btnDesglosar"
+              text="Desglosar"
+              onAction="#btnDesglosar_click"/>
+      
+      <Label fx:id="b500" text="Billetes de $500: " />
+      <Label fx:id="b200" text="Billetes de $200: " />
+      <Label fx:id="b100" text="Billetes de $100: " />
+      <Label fx:id="b50" text="Billetes de $50: " />
+      <Label fx:id="m20" text="Billetes de $20: " />
+      <Label fx:id="m10" text="Monedas de $10: " />
+      <Label fx:id="m5" text="Monedas de $5: " />
+      <Label fx:id="m2" text="Monedas de $2: " />
+      <Label fx:id="m1" text="Monedas de $1: " />
+      
+          
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
